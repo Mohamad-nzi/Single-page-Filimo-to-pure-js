@@ -1,0 +1,850 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(14px);
+    background: rgba(0, 0, 0, .8);
+    color: #e0e0e0;
+    font-size: 16px;
+    width: 100%;
+    z-index: 99;
+}
+
+.header .full-header {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header .full-header .right-side .menu .items-menu {
+    margin-left: 32px;
+    font-size: 1.4rem;
+}
+
+.header .full-header .right-side .menu .items-menu.padding-line {
+    padding-left: 32px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+}
+
+.header .full-header .right-side .menu .items-menu i {
+    padding-right: 8px;
+    font-size: .8rem;
+}
+
+.header .full-header .right-side .menu .items-menu a:hover {
+    color: #f9ad03;
+    transition: all .3s ease-out;
+}
+
+.header .full-header .right-side .menu .items-menu i.fa-horse {
+    font-size: 1.5rem;
+    padding-left: 8px;
+    padding-right: 0;
+}
+
+.header .full-header .right-side .menu .items-menu img {
+    padding-left: 8px;
+}
+
+.header .full-header .right-side .menu .items-menu .search-icon {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    font-size: 1rem;
+}
+
+.header .full-header .right-side .menu .items-menu .logo {
+    display: block;
+    width: 80px;
+    height: 25px;
+}
+
+.header .full-header .left-side .btn {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    fill: #fff;
+    font-size: 1.4rem;
+    padding: 8px 18px 8px 18px;
+    border-radius: 4px;
+    transition: all .3s ease-out;
+}
+
+.header .full-header .left-side .btn:hover {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.trailer {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    margin-top: 57px;
+}
+
+.trailer .poster-video {
+    background-image: url(../image/mov_cvr_137093_1712.webp);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.trailer .poster-video::after {
+    content: "\00a0";
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    padding-top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, #000000d1 100%);
+}
+
+.trailer .poster-video .title-video {
+    max-width: 800px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    z-index: 1;
+}
+
+.trailer .poster-video .title-video .video-btn {
+    width: 80px;
+    height: 80px;
+    background: #1cb561;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.trailer .poster-video .title-video .video-btn i {
+    margin-left: 2px;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trailer .poster-video .title-video .video-description h5 {
+    margin-bottom: 15px;
+}
+
+.trailer .poster-video .title-video .video-description .badge-time {
+    padding: 4px 10px 4px 10px;
+    background-color: #151515;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.trailer .poster-video .title-video .video-description .badge-time i {
+    padding-left: 8px;
+    color: #9a9fa2;
+}
+
+.content-video {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.content-video .movie-details {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(242, 242, 247, .29);
+}
+
+.content-video .movie-details .poster {
+    width: 126px;
+    height: 168px;
+    max-width: 15%;
+    margin-left: auto;
+}
+
+.content-video .movie-details .poster img {
+    border-radius: 12px;
+}
+
+.content-video .movie-details .movie-name {
+    max-width: 85%;
+    flex: 1 0 100%;
+}
+
+.content-video .movie-details .movie-name .title {
+    margin-bottom: 46px;
+}
+
+.content-video .movie-details .movie-name .title .left-side ul li .badge {
+    padding: 4px 10px 4px 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .movie-details .movie-name .title .left-side ul li .badge:hover {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.content-video .movie-details .movie-name .title .left-side ul li .badge-imdb {
+    color: #f9ad03;
+    background-color: rgba(245, 184, 63, .15);
+    padding: 4px 10px 4px 10px;
+    border-radius: 15px;
+    margin-left: 12px;
+}
+
+.content-video .follower {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.content-video .follower .btn-like {
+    padding: 10px 12px 12px 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .follower .btn-follower {
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .follower .btn-like i {
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.content-video .follower .btn-follower p {
+    line-height: normal;
+}
+
+.content-video .follower .btn-follower i {
+    font-size: 1.8rem;
+    line-height: normal;
+    padding-left: 8px;
+}
+
+.content-video .movie-story .poster {
+    position: relative;
+    max-width: 50%;
+    flex-basis: 50%;
+    cursor: pointer;
+}
+
+.content-video .movie-story .poster .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.content-video .movie-story .poster .position-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 2;
+}
+
+.content-video .movie-story .poster .video-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, .3);
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.content-video .movie-story .poster .video-btn i {
+    margin-left: 2px;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-video .movie-story .descrition {
+    max-width: 50%;
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+
+.content-video .movie-story .descrition h5 {
+    font-size: 1.8rem;
+}
+
+.content-video .movie-story .descrition p {
+    color: #b3b3b3;
+    line-height: 2;
+}
+
+.content-video .episode {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.content-video .episode .title h6 {
+    font-size: 1.8rem;
+}
+
+.content-video .episode .sort {
+    cursor: pointer;
+}
+
+.content-video .episode .sort i {
+    margin-top: 4px;
+    padding-right: 12px;
+}
+
+.content-video .seasons {
+    margin-bottom: 32px;
+}
+
+.content-video .seasons .tab {
+    padding: 8px 16px 8px 16px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    margin-left: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.content-video .seasons .tab.active {
+    border: 1px solid #f9ad03;
+    color: #f9ad03
+}
+
+.episode-content {
+    margin-bottom: 32px;
+}
+
+.content-video .episode-content ul .episode-items {
+    margin-bottom: 24px;
+}
+
+.content-video .episode-content ul .episode-items .item {
+    padding: 15px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    transition: all .5s ease-out;
+}
+
+.content-video .episode-content ul .episode-items .item:hover {
+    background: #282828;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video {
+    max-width: 20%;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .visibility {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video:hover .visibility {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .position-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 2;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .video-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, .6);
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .video-btn i {
+    margin-left: 2px;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-video .episode-content ul .episode-items .item .poster-video .badge-time {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    z-index: 3;
+    padding: 4px 10px 4px 10px;
+    background-color: #151515;
+    border-radius: 15px;
+}
+
+.content-video .episode-content ul .episode-items .item .details {
+    max-width: 80%;
+    flex-basis: 80%;
+    padding-right: 20px;
+}
+
+.content-video .episode-content ul .episode-items .item .details .header-movie {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+}
+
+.content-video .episode-content ul .episode-items .item .details .header-movie .badge {
+    background: rgba(34, 188, 103, .12);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+    padding: 4px 8px 4px 8px;
+    color: #1cb561;
+}
+
+.content-video .episode-content ul .episode-items .item .details .header-movie .badge i {
+    padding-left: 8px;
+}
+
+.content-video .episode-content ul .episode-items .item .details .header-movie h6 {
+    font-size: 1.8rem;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.content-video .episode-content ul .episode-items .item .details .header-movie h6:hover {
+    color: #f9ad03;
+}
+
+.content-video .episode-content ul .episode-items .item .details .description p {
+    color: #b3b3b3;
+    line-height: 2;
+    margin-bottom: 16px;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie {
+    flex-basis: 100%;
+    justify-content: end;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .more-btn {
+    background: rgba(255, 255, 255, .1);
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie i {
+    font-size: 1.8rem;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .button-group .right-btn {
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 12px 10px 12px;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #000;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .button-group .left-btn {
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 12px 10px 12px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .more-btn:hover,
+.content-video .episode-content ul .episode-items .item .details .footer-movie .button-group .right-btn:hover,
+.content-video .episode-content ul .episode-items .item .details .footer-movie .button-group .left-btn:hover {
+    background: #555454;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .btn-play {
+    padding: 8px 16px;
+    background-color: #1cb561;
+    border-radius: 4px;
+    margin: 0 8px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .btn-play:hover {
+    background-color: #108846;
+}
+
+.content-video .episode-content ul .episode-items .item .details .footer-movie .btn-play i {
+    margin-left: 8px;
+}
+
+.content-video .movie-proposal .movie-header h6 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+
+.content-video .movie-proposal .movie-list {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item {
+    flex-basis: 20%;
+    padding: 0 12px 0 12px;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item {
+    position: relative;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .gradient {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    padding-top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, #000000d1 100%);
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .footer-img {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .badge {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background-color: #1cb561;
+    border-radius: 24px;
+    padding: 2px 8px 2px 8px;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .badge p {
+    font-size: 1.2rem;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .visibility {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item:hover .visibility {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .visibility .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.521);
+    z-index: 6;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .item .visibility .description {
+    position: absolute;
+    bottom: 16px;
+    right: 12px;
+    z-index: 7;
+}
+
+.content-video .movie-proposal .movie-list ul .movie-item .movie-name {
+    margin-top: 16px
+}
+
+.content-video .movie-proposal .movie-list .pos-right {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    display: inline-block;
+    right: -37px;
+}
+
+.content-video .movie-proposal .movie-list .pos-left {
+    position: absolute;
+    top: 45%;
+    left: 12;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    display: inline-block;
+}
+
+.content-video .movie-proposal .movie-list .arrow {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.content-video .movie-proposal .movie-list i {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-video .casts {
+    margin-bottom: 48px;
+}
+
+.content-video .casts h6 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.content-video .casts .casts-list {
+    padding-right: 20px;
+    padding-bottom: 12px;
+}
+
+.content-video .casts .casts-list .title {
+    color: #9a9fa2;
+    margin-bottom: 8px;
+}
+
+.content-video .casts .casts-list .name {
+    font-weight: bold;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.content-video .casts .casts-list .name:hover {
+    color: #f9ad03;
+}
+
+.content-video .comment .title {
+    margin-bottom: 16px;
+}
+
+.content-video .comment .title h6 {
+    font-size: 1.8rem;
+}
+
+.content-video .comment .drop-down {
+    margin-right: 32px;
+    padding: 8px 16px 8px 16px;
+    background-color: #4d4d4d;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.content-video .comment .drop-down i {
+    padding-right: 8px;
+    font-size: 1rem;
+}
+
+.content-video .comment .massage {
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555454;
+}
+
+.content-video .comment .massage .avatar {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #f9ad03;
+    border-radius: 24px;
+}
+
+.content-video .comment .massage .avatar i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #815800
+}
+
+.content-video .comment .massage .box {
+    flex: 1 0 auto;
+    background-color: #4d4d4d;
+    margin-right: 12px;
+    border-radius: 8px;
+}
+
+.content-video .comment .massage .box p {
+    margin-right: 12px;
+    color: #e0e0e0;
+}
+
+.content-video .comment .massage .box .send {
+    position: relative;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    background-color: #343434;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.content-video .comment .massage .box .send i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b1b1b1;
+}
+
+.content-video .comment .massage-filimo .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 24px;
+    margin-top: 4px;
+}
+
+.content-video .comment .massage-filimo .box {
+    padding-right: 12px;
+    flex: 1 0 auto;
+}
+
+.content-video .comment .massage-filimo .box .mms {
+    font-size: 1.2rem;
+    color: #b1b1b1;
+    margin-bottom: 32px;
+}
+
+.content-video .comment .massage-filimo .box .name {
+    margin-bottom: 8px;
+}
+
+.content-video .comment .massage-filimo .box .date {
+    font-size: 1.2rem;
+    color: #b1b1b1;
+    padding-right: 12px;
+}
+
+.content-video .comment .massage-filimo .box .header-massage .rate {
+    gap: 12px;
+}
+
+.content-video .comment .massage-filimo .box .header-massage .rate i {
+    font-size: 1.8rem;
+    color: #b1b1b1;
+    margin-right: 8px;
+    transition: all .3s ease-out;
+}
+
+.content-video .comment .massage-filimo .box .header-massage .rate i:hover {
+    scale: 1.2;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 8px 12px 8px 12px;
+    background-color: #212121;
+    z-index: 40;
+}
+
+.footer .footer-list {
+    margin: 0 12px 0 12px;
+}
+
+.footer .footer-list .items {
+    padding-left: 16px;
+    transition: all .3s ease-out;
+}
+
+.footer .footer-list .items:hover p,
+.footer .footer-list .items:hover i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .footer-list .items p {
+    font-size: 1.2rem;
+    color: #9a9fa2;
+    transition: all .3s ease-out;
+}
+
+.footer .footer-list .items i {
+    font-size: 1.2rem;
+    color: #9a9fa2;
+    padding-left: 10px;
+    transition: all .3s ease-out;
+}
+
+.footer .end p {
+    font-size: 1.2rem;
+    color: #9a9fa2;
+    transition: all .3s ease-out;
+}
+
+.footer .end i {
+    font-size: 1.2rem;
+    color: #9a9fa2;
+    padding-left: 10px;
+    transition: all .3s ease-out;
+}
+
+.footer .end:hover p,
+.footer .end:hover i {
+    color: #fff;
+}
